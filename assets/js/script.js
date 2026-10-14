@@ -148,10 +148,10 @@ console.log(femaleCharacters)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 const perColoreOcchi = {
-	blue: [],
-	yellow: [],
-	brown: [],
-	red: [],
+	"blue": [],
+	"yellow": [],
+	"brown": [],
+	"red": [],
 	"blue-gray": []
 }
 /* ESERCIZIO 4 — Raggruppa per colore degli occhi
