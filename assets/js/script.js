@@ -148,12 +148,13 @@ console.log(femaleCharacters)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 const perColoreOcchi = {
-	"blue": [],
-	"yellow": [],
-	"brown": [],
-	"red": [],
+	blue: [],
+	yellow: [],
+	brown: [],
+	red: [],
 	"blue-gray": []
 }
+console.log(perColoreOcchi)
 /* ESERCIZIO 4 — Raggruppa per colore degli occhi
    For su starWarsCharacters + switch (character.eye_color).
    In ogni case fai push del personaggio nell'array giusto. Ricorda break.
