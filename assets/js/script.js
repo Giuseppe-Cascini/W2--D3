@@ -116,7 +116,7 @@ const starWarsCharacters = [
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 let arrNames= [];
-for(let i=0; i< starWarsCharacters.length; i++); {
+for(let i=0; i< starWarsCharacters.length; i++) {
     arrNames.push(starWarsCharacters[i].name);
 }
 console.log(arrNames);
