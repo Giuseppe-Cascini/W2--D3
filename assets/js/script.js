@@ -115,6 +115,11 @@ const starWarsCharacters = [
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let arrNames= [];
+for(let i=0; i< starWarsCharacters.length; i++); {
+    arrNames.push(starWarsCharacters[i].name);
+}
+console.log(arrNames);
 
 /* ESERCIZIO 2 — Solo i femminili
    Array vuoto "personaggiFemminili". Con un for + if (gender === "female"),
