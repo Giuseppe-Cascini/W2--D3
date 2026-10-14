@@ -152,7 +152,7 @@ const perColoreOcchi = {
 	yellow: [],
 	brown: [],
 	red: [],
-	"blue-gray": []
+	'blue-gray': []
 }
 console.log(perColoreOcchi)
 /* ESERCIZIO 4 — Raggruppa per colore degli occhi
@@ -162,7 +162,26 @@ console.log(perColoreOcchi)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+for (let i=0; i < starWarsCharacters.length; i++) {
+	switch (starWarsCharacters[i].eye_color) {
+		case 'blue':
+			perColoreOcchi.blue.push(starWarsCharacters[i]);
+			break;
+		case 'yellow':
+			perColoreOcchi.yellow.push(starWarsCharacters[i]);
+			break;
+		case 'brown':
+			perColoreOcchi.brown.push(starWarsCharacters[i]);
+			break;
+		case 'red':
+			perColoreOcchi.red.push(starWarsCharacters[i]);
+			break;
+		case 'blue-gray':
+			perColoreOcchi['blue-gray'].push(starWarsCharacters[i]);
+			break;
+	}	
+}
+console.log(perColoreOcchi)
 /* ESERCIZIO 5 — Massa totale dell'equipaggio (while)
    i = 0, massaTotale = 0.
    While: somma Number(starWarsCharacters[i].mass).
