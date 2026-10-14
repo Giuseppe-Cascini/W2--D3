@@ -128,6 +128,18 @@ console.log(arrNames);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let femaleCharacters = [];
+for(let i=0; i < starWarsCharacters.length; i++) {
+	if ( starWarsCharacters.gender[i] === "female") {
+		const femaleCharacters2 = {
+			name: starWarsCharacters[i].name,
+			hair_color: starWarsCharacters[i].hair_color,
+			eye_color: starWarsCharacters[i].eye_color
+		}
+			femaleCharacters.push(starWarsCharacters2)
+	}
+		console.log(femaleCharacters)
+}
 
 /* ESERCIZIO 3 — Oggetto raggruppamento
    Crea perColoreOcchi con chiavi: blue, yellow, brown, red, blue-gray (con trattino).
@@ -135,7 +147,13 @@ console.log(arrNames);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+const perColoreOcchi = {
+	blue: [],
+	yellow: [],
+	brown: [],
+	red: [],
+	blue-gray: []
+}
 /* ESERCIZIO 4 — Raggruppa per colore degli occhi
    For su starWarsCharacters + switch (character.eye_color).
    In ogni case fai push del personaggio nell'array giusto. Ricorda break.
