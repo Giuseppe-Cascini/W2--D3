@@ -267,6 +267,19 @@ console.log(`Piu basso: ${minHeight.name} ${minHeight.height} cm`);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log(`Lunghezza prima: ${arrNames.length}`)
+for(let i = 0; i < arrNames.length; i++) {
+	for(let j = 0; j < femaleCharacters.length; j++) {
+		if (arrNames[i] === femaleCharacters[j].name) {
+			arrNames.splice(i, 1);
+			i--;
+			break;
+		}
+	}
+}
+console.log(`Lunghezza nomi dopo: ${arrNames.length}`);
+console.log(arrNames)
+
 
 /* ESERCIZIO 10 — Personaggio casuale
    indice = Math.floor(Math.random() * starWarsCharacters.length)
@@ -276,6 +289,19 @@ console.log(`Piu basso: ${minHeight.name} ${minHeight.height} cm`);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let indice = Math.floor(Math.random() * starWarsCharacters.length);
+let  personaggio = starWarsCharacters[indice];
+console.log(`Personaggio estratto: ${personaggio.name}`)
+if (personaggio.gender === 'male') {
+	console.log(`Lui è alto {personaggio.height} cm`)
+} else {
+	console.log(`Lei è alta {personaggio.height} cm`)
+}
+if (personaggio.hair_color !== 'n/a' && personaggio.hair_color !== 'none') {
+	console.log(`Capelli ${personaggio.hair_color}`);
+} else {
+	console.log('Senza capelli')
+}
 
 /* --EXTRA-- ESERCIZIO 11 — Conta per colore di occhi
    For...in sulle chiavi di perColoreOcchi.
@@ -283,3 +309,6 @@ console.log(`Piu basso: ${minHeight.name} ${minHeight.height} cm`);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+for (const colore in perColoreOcchi) {
+	console.log(`${colore} : ${perColoreOcchi[colore].length} personaggi`);
+}
